@@ -21,5 +21,7 @@ group :development do
   gem 'web-console', '~> 2.0'
 
   gem 'spring'
+  
+  gem 'pry', '~> 0.10.3'
 end
 

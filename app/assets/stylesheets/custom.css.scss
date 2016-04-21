@@ -115,7 +115,7 @@ h6 {
 .banner {
     padding: 100px 0;
     color: #f8f8f8;
-    background: url(../img/banner-bg.jpg) no-repeat center center;
+    background: url(../img/banner-bg.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -166,4 +166,132 @@ footer {
 
 p.copyright {
     margin: 15px 0 0;
+}
+
+.nav-item {
+    margin-left: 25px;
+    float: left;
+    margin-top: 20px;
+    
+    
+}
+
+li {
+    list-style-type: none;
+    
+}
+
+.nav_ul_item {
+    padding-left: 25px;
+    float: left;
+    margin-top: 20px;
+    
+}
+
+.center {
+    text-align: center;
+
+}
+
+h1, h2, h3, h4 {
+    line-height: 1;
+    
+}
+
+h1 {
+    font-size: 3em;
+    letter-spacing: -2px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: normal;
+    color: #777;
+    
+}
+
+.left {
+    text-align: left;
+    letter-spacing: .5px;
+    
+}
+
+.footer {
+    margin-top: 25px;
+    border-top: 1px solid #eaeaea;
+    color: #777;
+    
+}
+
+.patient_info {
+    margin-top: 10px;
+    
+}
+
+.gravatar {
+    border-radius: 50%;
+    
+}
+
+
+
+.well {
+    background-color: #EDEDED;
+   
+    
+}
+
+
+
+input, textarea, select, .uneditable-input {
+    border: 1px solid #d2d2d2;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.input_checkbox input{
+    width: auto !important;
+    
+    
+}
+input {
+    height: auto !important;
+}
+
+span.picture {
+    margin-top: 10px;
+    input {
+        border: 0;
+        
+    }
+}
+
+.show_reservation {
+    margin: 10px 10px 10px 10px;
+    
+}
+
+hr {
+    width: 100%;
+}
+
+.well {
+    background-color: #D2FADA;
+    
+}
+
+.doctorpic {
+    border-radius: 50%;
+    padding:8px;
+   border:2px solid #D2FADA;
+   background-color:#FAFAFA;
+   -moz-box-shadow: 0px 3px 2px #ccc;
+    -webkit-box-shadow: 0px 3px 2px #ccc;
+	box-shadow: 0px 6px 5px #ccc;
+    
 }

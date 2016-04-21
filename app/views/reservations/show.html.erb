@@ -1,0 +1,31 @@
+
+
+<div class="container">
+    <%= render 'shared/page_title', title: @reservation.name %>
+    <br/>
+    <div class="row">
+        <div class="col-md-8">
+            <%= link_to "Edit this Reservation", edit_reservation_path(@reservation), class: "btn btn-success btn-small pull-right" %>
+            <h3><%= @reservation.summary %></h3> 
+            <div class="well">
+                <p>
+                    <strong>Symptoms: </strong>
+                </p>
+                <%= simple_format(@reservation.description) %>  
+                <h5><%= link_to "Return to Reservation list", reservations_path, class: "btn btn-info btn-small" %> </h5>
+                
+                
+            </div>
+        </div>
+        
+        <div class="col-md-4 center">
+            <%= gravatar_for @reservation.patient, size: 200 %>
+            <p>
+                <h5>Reserved by: <%= @reservation.patient.name %></h5>
+            </p>
+        </div>
+        
+            
+    </div>
+</div>
+    

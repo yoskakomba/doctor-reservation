@@ -1,0 +1,29 @@
+
+
+<div class="container">
+    <%= render 'shared/page_title', title: "All Reservations" %>
+    <% @reservations.each do |reservation| %>
+        <div class="row">
+            
+            <div class="col-md-2">
+                <section class="patient-info center">
+                    <%= gravatar_for reservation.patient, size: 100 %>
+                    <h5>Patient name: <%= reservation.patient.name %></h5>
+                </section>
+            </div>
+            
+            <div class="col-lg-8 well">
+                <h4><%= link_to reservation.name,  reservation_path(reservation) %></h4>
+                <p><%= reservation.summary %></p>
+                <p>
+                    <span class="quiet">
+                        <small> <%= time_ago_in_words(reservation.created_at) %> ago</small>
+                    </span>
+                </p>
+            </div>
+            
+            
+            <hr/>
+        </div>
+    <% end %>
+</div>

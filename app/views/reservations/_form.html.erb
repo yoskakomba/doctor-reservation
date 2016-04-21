@@ -1,0 +1,23 @@
+
+<div class="container">
+    <%= render 'shared/errors', obj: @reservation %>
+    
+    <div class="row">
+        <div class="well col-md-8 col-md-offset-2">
+            <%= form_for @reservation do |f| %>
+                <%= f.label :name %>
+                <%= f.text_field :name %>
+                
+                <%= f.label :summary %>
+                <%= f.text_field :summary %>
+                
+                <%= f.label :description %>
+                <%= f.text_area :description, rows: 10 %>
+                
+                <%= f.submit(@reservation.new_record? ? 'Book Now!' : 'Edit Recipe', class: "btn btn-success") %>
+            
+            
+            <% end %>
+        </div>
+    </div>
+</div>
